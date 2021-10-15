@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home" id="home">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li><a href = "#home">Home</a></li>
+                        <li><a href = "#sobre">Sobre</a></li>
+                        <li><a href = "#habilidades">Habilidades</a></li>
+                        <li><a href = "#projetos">Projetos</a></li>
+                        <li><a href = "#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                <div onclick="menumobile()" class="hamburguer">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+            </header>
+            <div class="banner">
+                <h1>Ola</h1>
+                <h2>Seja bem vindo</h2>
+                <h3>Me chamo <em>Thiago</em> e sou, <br></h3>
+                <h4>Dev.Full-Stack</h4>
+            </div>
+            <div class="anima">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </div>
+        </div>
+        <div id="sobre" class="sobre">
+            <div class="cardsobre">
+                <div class="perfil">
+                    <div class="perfilimg">
+                        <img />
+                    </div>
+                    <div class="info">
+                        <span>22 anos</span>
+                        <p>Bauru/SP</p>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/Thiago-Simplicio" target="_blank">github.com/Thiago-Simplicio</a>
+                        <a href="https://www.linkedin.com/in/thiago-simplicio-da-silva-3581a11b0/" target="_blank">LinkeDin</a>
+                    </div>
+                </div>
+                <div class="eu">
+                    <span>Olá, como já pode ter visto me chamo,<em>Thiago Simplicio</em> sou de <em>Bauru</em> uma cidade aqui do interior de São Paulo<br></span>
+                    <span>no momento estou cusrsando <em>Ciência da computação</em> na Anhanguera finalizo em 2024</span>
+                    <span>logo mais a baixo você vera os meus conhecimentos e habilidades</span>
+                    <span>Obrigado por tirar uma parte do seu tempo para me ver e conhecer, Abraço<i id="heart" class="fas fa-heart"></i></span>
+                </div>
+            </div>
+        </div>
+        <div id="habilidades" class="habilidades">
+            <div class="boxcard">
+                <div class="card">
+                    <span>Desenvolvimento front-end</span>
+                    <div class="text">
+                        <span>Conhecimentos em<br><em>HTML,CSS,JAVASCRIPT</em></span>
+                        <span>Frameworks<br><em>React JS e BootsTrap</em></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>Desenvolvimento back-end</span>
+                    <div class="text">
+                        <span>Conhecimentos em<br><em>Node JS</em></span>
+                        <span>Frameworks<br><em>express</em></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <span>Banco de Dados</span>
+                    <div class="text">
+                        <span>Conhecimentos em<br><em>MongoDB e MySql</em></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projetos" class="projetos">
+            <div class="cardprojeto">
+                <div class="video">
+                    <video src="/src/movies/tarefas.mp4" autoplay loop muted/>
+                </div>
+                <div class="repo">
+                    <a>Ver repositorio no gitHub</a>
+                </div>
+            </div>
+        </div>
+        <div id="contato" class="contato">
+            <form action="https://formsubmit.co/thisimplicio@hotmail.com" method="POST" enctype="text/plain">
+                <div class="fields">
+                    <input name="nome" type="text" placeholder="Nome Completo"/>
+                </div>
+                <div class="fields">
+                    <input name="email" type="email" placeholder="Email"/>
+                </div>
+                <div class="fields">
+                    <textarea name="menssagem" placeholder="Deixe sua menssagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="footer">
+            <span>Feito com <i class="fas fa-heart"></i></span>
+        </div>
+    </div>
+</body>
+<script src="/script.js"></script>
+</html>
